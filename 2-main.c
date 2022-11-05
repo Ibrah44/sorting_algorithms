@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "sort.h"
 
 /**
@@ -9,18 +7,13 @@
  */
 int main(void)
 {
-	int array1[] = {19, 48, 99, 71, 13, 52, 96, 73, 86, 7};
-	int array2[] = {2};
-	size_t n = sizeof(array1) / sizeof(array1[0]);
+	int array[] = {5, -3, -5, -5, -3};
+	size_t n = sizeof(array) / sizeof(array[0]);
 
-	print_array(array1, n);
+	print_array(array, n);
 	printf("\n");
-	selection_sort(array1, n);
+	selection_sort(array, n);
 	printf("\n");
-	print_array(array1, n);
-
-	selection_sort(array2, 1);
-	printf("\n");
-	print_array(array2, 1);
+	print_array(array, n);
 	return (0);
 }
